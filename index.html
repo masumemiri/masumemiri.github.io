@@ -3,84 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مسیر یادگیری برنامه نویسی</title>
+    <title>مسیر یادگیری برنامه نویسی - معصومه</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Tahoma', sans-serif;
+            font-family: 'Vazir', Tahoma, sans-serif;
             direction: rtl;
             text-align: right;
-            margin: 20px 50px;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f9;
             color: #333;
         }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #3498db;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
         h1, h2 {
             color: #2c3e50;
         }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            line-height: 1.6;
-        }
+
         .section {
             margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px 5px 5px 0;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-size: 0.95em;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            color: #555;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
+
+<header>
     <h1>سلام، من معصومه هستم!</h1>
     <p>در این وب‌سایت، دوره‌ها و پروژه‌های آموزشی‌ام را به اشتراک می‌گذارم.</p>
+</header>
 
+<nav>
+    <a href="#base">پایه برنامه نویسی</a> |
+    <a href="#python">پایتون و پروژه‌ها</a> |
+    <a href="#data">تحلیل داده</a> |
+    <a href="#ai">هوش مصنوعی</a>
+</nav>
 
-
-    <div class="section">
+<main>
+    <div class="section" id="base">
         <h2>پایه برنامه نویسی</h2>
         <ul>
-            <li>درک برنامه نویسی</li>
-            <li>اصول و مبانی برنامه نویسی</li>
-            <li>آموزش پایتون</li>
-            
-        </ul>
-    </div>
- <div class="section">
-        <h2>پایتون و پروژه ها</h2>
-        <ul>
-            <li>آموزش شی گرایی در پایتون</li>
-            <li>آموزش عملگرهادر پایتون </li>
-            <li>آموزش تابع در پایتون</li>
-            <li>آموزش کلاس در پایتون</li>
-            <li>چند قابلیت پیشرفته</li>
-            
+            <li><a href="#" class="btn">درک برنامه نویسی</a></li>
+            <li><a href="#" class="btn">اصول و مبانی برنامه نویسی</a></li>
+            <li><a href="#" class="btn">آموزش پایتون</a></li>
         </ul>
     </div>
 
- <div class="section">
+    <div class="section" id="python">
+        <h2>پایتون و پروژه‌ها</h2>
+        <ul>
+            <li><a href="#" class="btn">آموزش شی‌گرایی در پایتون</a></li>
+            <li><a href="#" class="btn">آموزش عملگرها در پایتون</a></li>
+            <li><a href="#" class="btn">آموزش تابع در پایتون</a></li>
+            <li><a href="#" class="btn">آموزش کلاس در پایتون</a></li>
+            <li><a href="#" class="btn">چند قابلیت پیشرفته</a></li>
+        </ul>
+    </div>
+
+    <div class="section" id="data">
         <h2>تحلیل داده</h2>
         <ul>
-            <li>آموزش کار با دیتافریم ها در pandas</li>
-            <li>آموزش حل مسیله ریاضی به روش اویلر </li>
-            <li>آموزش محاسبه ویژه ماتریس ها در پایتون</li>
-
-            
+            <li><a href="#" class="btn">کار با دیتافریم‌ها در Pandas</a></li>
+            <li><a href="#" class="btn">حل مسئله ریاضی به روش اویلر</a></li>
+            <li><a href="#" class="btn">محاسبه مقادیر ویژه ماتریس‌ها</a></li>
         </ul>
     </div>
 
- <div class="section">
+    <div class="section" id="ai">
         <h2>هوش مصنوعی و یادگیری ماشین</h2>
         <ul>
-            <li>آموزش کتابخانه های پایتون برای یادگیری ماشین و یادگیری عمیق </li>
-            <li>آموزش آشنایی با پایتون برای پردازش زبان های طبیعی (NLP) </li>
-            <li>آموزش بلاک چن و رمزارز</li>
-
-            
+            <li><a href="#" class="btn">کتابخانه‌های پایتون برای یادگیری ماشین و یادگیری عمیق</a></li>
+            <li><a href="#" class="btn">پردازش زبان‌های طبیعی (NLP)</a></li>
+            <li><a href="#" class="btn">آموزش بلاکچین و رمزارز</a></li>
         </ul>
     </div>
 
-    <p>برای مشاهده پروژه‌ها و کدهایم می‌توانید به <a href="https://github.com/masumemiri" target="_blank">پروفایل GitHub من</a> مراجعه کنید.</p>
+    <p>برای مشاهده پروژه‌ها و کدهایم می‌توانید به <a href="https://github.com/masumemiri" target="_blank" class="btn">پروفایل GitHub من</a> مراجعه کنید.</p>
+</main>
+
+<footer>
+    © 2025 معصومه میری - همه حقوق محفوظ است
+</footer>
+
 </body>
 </html>
-
